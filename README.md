@@ -1,3 +1,5 @@
+We have english version and french version in this README
+
 Version française
 
 # Develop-a-website-by-Django
