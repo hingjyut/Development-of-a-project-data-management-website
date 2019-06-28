@@ -2,6 +2,7 @@ Version française
 
 # Develop-a-website-by-Django
 Développement d'un site web de gestion de données de projets par Django
+Tous les codes que nous avons écris sont dans la fiche 'src'.
 
 Baser sur `python3.7.0` et `Django2.1.7`   
 
