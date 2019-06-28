@@ -17,7 +17,7 @@ IDE:Pycharm, MySQL
 - Distribuer des gens aux groupes différents.
 - Fixer des droits différents aux groupes différents.
 
-# Infromations utiles:
+# Informations utiles:
 
 - Django : Le lien le plus pratique pour apprendre Django pour les débutants: https://www.youtube.com/watch?v=F5mRW0jo-U4 
     Regardez les 20 premières minutes de cette vidéo pour savoir comment créer l'environnement pour Django. Et installez MySQL aussi.
