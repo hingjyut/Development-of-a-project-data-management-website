@@ -1,0 +1,52 @@
+{% extends 'base.html' %}
+{% block content%}
+{% include 'navbar.html' %}
+<table id="personalproject-table" class="table table-striped">
+    <thead>
+
+    <tr>
+        <td>titre
+        <td>{{object.titre}}
+        <td/>
+        </td></tr>
+    <tr>
+        <td>priorite
+        <td>{{object.priorite}}</td>
+        <td/>
+    </tr>
+    <tr>
+        <td>commentaire
+        <td>{{object.commentaire}}</td>
+        <td/>
+    </tr>
+    <tr>
+        <td>etat
+        <td>{{object.etat}}</td>
+        <td/>
+    </tr>
+    <tr>
+        <td>status
+        <td>{{object.status}}</td>
+        <td/>
+    </tr>
+    <tr>
+        <td>duree
+        <td>{{object.duree}}</td>
+        <td/>
+    </tr>
+    <tr>
+        <td>budget
+        <td>{{object.budget}}</td>
+        <td/>
+    </tr>
+    <tr>
+        <td>type
+        <td>{{object.type}}</td>
+        <td/>
+    </tr>
+
+    </thead>
+</table>
+
+
+{% endblock %}

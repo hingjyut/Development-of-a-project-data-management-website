@@ -1,0 +1,67 @@
+{% extends 'base.html' %}
+
+{% block content%}
+{% include 'navbar.html' %}
+	<table id="project-table" class="table table-striped">
+            <thead>
+              <tr>
+                <!--<th scope="col">#</th>-->
+                <th scope="col">Project</th>
+                <th scope="col">Direction</th>
+                <th scope="col">Priorité</th>
+                <th scope="col">Etat d'avancement</th>
+                <th scope="col">Statut</th>
+                <!--<th scope="col">Actions</th>-->
+              </tr>
+            </thead>
+            <tbody>
+
+
+            {% for instance in object_list %}
+
+                <tr>
+                    <!--<td>{{instance.id}}<td/>-->
+                    <td> <a href="{{instance.get_absolute_url}}">{{instance.titre}} </a></td>
+                    <td>{{instance.direction}}</td>
+                    <td>{{instance.priorite}}</td>
+                    <td>{{instance.etat}}</td>
+                    <td>{{instance.status}}</td>
+                    <!--<td>-->
+                        <!--<form action="." method="POST">-->
+                        <!--&lt;!&ndash;{% csrf_token %}&ndash;&gt;-->
+                        <!--&lt;!&ndash;{{form.as_p}}&ndash;&gt;-->
+                        <!--&lt;!&ndash;<input class="fas fa-edit value = 'Save'/>&ndash;&gt;-->
+
+                        <!--<span><a href="create" style="color: #495057" class="fas fa-edit"></a></span>-->
+                        <!--<span><a href="info.html" style="color: #495057" class="fas fa-info-circle infoButton"></a></span>-->
+                        <!--<span><a href="<int:id>/delete/" class="far fa-trash-alt" data-toggle="modal" data-target="#deleteModal" data-whatever="@getbootstrap"></a></span>-->
+                    <!--<div class="modal fade" id="deleteModal" tabindex="-1" role="dialog" aria-labelledby="deleteModalTitle" aria-hidden="true">-->
+                      <!--<div class="modal-dialog modal-dialog-centered" role="document">-->
+                        <!--<div class="modal-content">-->
+                          <!--<div class="modal-header">-->
+                            <!--<h5 class="modal-title" id="deleteModalTitle">Supprimer projet</h5>-->
+                            <!--<button type="button" class="close" data-dismiss="modal" aria-label="Close">-->
+                              <!--<span aria-hidden="true">&times;</span>-->
+                            <!--</button>-->
+                          <!--</div>-->
+                          <!--<div class="modal-body">-->
+                            <!--Êtes-vous sûr de vouloir supprimer ce projet?-->
+                          <!--</div>-->
+                          <!--<div class="modal-footer">-->
+                            <!--<button type="button" class="btn btn-secondary" data-dismiss="modal">Annuler</button>-->
+                            <!--<button type="button" class="btn btn-primary">Supprimer</button>-->
+                          <!--</div>-->
+                        <!--</div>-->
+                      <!--</div>-->
+                    <!--</div>-->
+                        <!--</form>-->
+                    <!--</td>-->
+                </tr>
+
+
+            {% endfor %}
+
+            </tbody>
+          </table>
+
+{% endblock %}

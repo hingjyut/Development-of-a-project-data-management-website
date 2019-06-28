@@ -1,0 +1,13 @@
+{% extends 'base.html'%}
+
+{% block content %}
+
+{% for instance in object_list %}
+    <!--<p>{{instance.id}}-{{instance.title}}-{{instance.description}}</p>-->
+    <!--<p>{{instance.id}}-<a href = '/products/{{instance.id}}'> {{instance.title}} </a></p>-->
+    <p> {{ instance.id }} -<a href="{{instance.get_absolute_url}}">{{instance.nom}} {{instance.prenom}}</a> </p>
+{% endfor %}
+
+{% endblock %}
+
+<!--超链接-->

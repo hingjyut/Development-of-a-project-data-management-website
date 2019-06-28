@@ -1,0 +1,63 @@
+{% extends 'base.html' %}
+
+{% block content%}
+{% include 'navbar.html' %}
+<table id="project-table" class="table table-striped">
+    <thead>
+
+    <tr>
+        <td>titre
+        <td>{{object.titre}}
+        <td/>
+        </td></tr>
+    <tr>
+        <td>direction
+        <td>{{object.direction}}
+        <td/>
+        </td></tr>
+    <tr>
+        <td>chef
+        <td>{{object.chef}}</td>
+        <td/>
+    </tr>
+    <tr>
+        <td>priorite
+        <td>{{object.priorite}}</td>
+        <td/>
+    </tr>
+    <tr>
+        <td>etat
+        <td>{{object.etat}}</td>
+        <td/>
+    </tr>
+    <tr>
+        <td>status
+        <td>{{object.status}}</td>
+        <td/>
+    </tr>
+    <tr>
+        <td>duree
+        <td>{{object.duree}}</td>
+        <td/>
+    </tr>
+
+    </thead>
+    <table/>
+    <form action="." method="POST">
+        <button><a href="{{object.id}}/update/"> Edit </a></button>
+        <button><a href="{{object.id}}/delete/"> Delete </a></button>
+        <!--<input type="submit" value = 'Edit'/>-->
+    </form>
+
+
+    <!--<p>{{object.direction}}</p>-->
+    <!--<p>{{object.chef}}</p>-->
+    <!--<p>{{object.priorite}}</p>-->
+    <!--<p>{{object.etat}}</p>-->
+    <!--<p>{{object.status}}</p>-->
+    <!--<p>{{object.commentaire}}</p>-->
+    <!--<p>{{object.budget}}</p>-->
+    <!--<p>{{object.duree}}</p>-->
+    <!--<p>{{object.type}}</p>-->
+
+    {% endblock %}
