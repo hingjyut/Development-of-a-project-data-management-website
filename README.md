@@ -88,7 +88,7 @@ Rengistrer cet app dans `final/setting.py`:
     'feuillederoute',
     ]
 
-## Informarions Pratiques:
+## Informations Pratiques:
 
 Dans un app, models.py et views.py sont fournies. Dans model.py, il faut écrire des paramètres de cet app, et l'enregistrer à feuillederoute/admin.py. Après exécuter, le models.py, django va faire des tables de base de données. S'il y a une classe qui se trouve à feuillederoute/model.py, une table correspondante existe automatiquement. (Vous pouvez changer des informations de tables à l'aide de rédiger la fiche de la table.) Views.py fait partie de recevoir des informations qui vient du front-end, et consulte MySQL pour avoir des informations et lui rendre. Il faut créer un forms.py et urls.p. En utilisant forms.py pour désigner comment présenter des formules de paramètres qui sont dans models.py. Il faut enregistrer des liens à chaque app à urls.py.
 
