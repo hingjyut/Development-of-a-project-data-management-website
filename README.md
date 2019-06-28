@@ -3,29 +3,28 @@ We have english version and french version in this README
 Version française
 
 # Develop-a-website-by-Django
-Développement d'un site web de gestion de données de projets par Django
+Développement d'un site web de gestion de données de projets avec Django
 
-Tous les codes que nous avons écris sont dans la fiche 'src'.
+Tous les codes que nous avons écrit sont dans la fiche 'src'.
 
-Baser sur `python3.7.0` et `Django2.1.7`   
+Baser sur Python 3.7.0 et Django 2.1.7
 
 IDE:Pycharm, MySQL
 
 
-# Fonctions principaux：
+# Fonctions principales：
 - Ajouter/Modifier/Supprimer Direction, Member, Personal Project
-- Distribuer des gens aux groupes différentes.
-- Fixer des droits différents aux groupes différentes. 
+- Distribuer des gens aux groupes différents.
+- Fixer des droits différents aux groupes différents.
 
-# Infromations utils:
+# Infromations utiles:
 
-- Django : Le plus pratique lien d'apprendre Django pour les débutants: https://www.youtube.com/watch?v=F5mRW0jo-U4 
-    Regardez les 20 premières minutes de cette vidéo, alors vous savez comment créer l'environnement pour Django. Et installez MySQL aussi. 
+- Django : Le lien le plus pratique pour apprendre Django pour les débutants: https://www.youtube.com/watch?v=F5mRW0jo-U4 
+    Regardez les 20 premières minutes de cette vidéo pour savoir comment créer l'environnement pour Django. Et installez MySQL aussi.
 
-- MySQL : Le plus pratique lien d'apprendre MySQL pour les débutants : https://www.tutorialspoint.com/mysql/index.htm
+- MySQL : Le plus pratique lien d'apprendre MySQL pour les débutants : https://www.tutorialspoint.com/mysql/index.html
 
-
-- HTML/CSS/JAVASCRIPT : Le plus pratique lien d'apprendre HTML/CSS/JAVASCRIPT pour les débutants :
+- HTML/CSS/JAVASCRIPT : Le lien le plus pratique pour apprendre HTML/CSS/JAVASCRIPT pour les débutants:
   https://getbootstrap.com/docs/4.3/getting-started/introduction/
   https://www.udemy.com/the-web-developer-bootcamp/
   https://developer.mozilla.org/fr/docs/Web
@@ -73,7 +72,7 @@ Excutez-le dans le terminal de Pycharm:
     python3 manage.py makemigrations
     python3 manage.py migrate
 
-Créer un 'app' qu'il s'appele feuillederoute par:
+Créer un 'app' qui s'appelle feuillederoute par:
 
     python3 manage.py startapp feuillederoute
 
@@ -91,7 +90,7 @@ Rengistrer cet app dans `final/setting.py`:
 
 ## Informarions Pratiques:
 
-Dans un app, models.py et views.py sont fournies. Dans model.py, il faut écrire des parametres de cet app, et l'engistrer à feuillederoute/admin.py. Après excuter le models.py, django va faire des tables de base de donnée. S'il y a un class se trouve à feuillederoute/model.py, un table correspondant existe automatiquement. (Vous pouvez changer des informations de tables par rédiger la fiche de la table.) Views.py fait partie de recevoir des infromations qui vient de front-end, et consulte MySQL pour avoir des informations et lui rendre. Il faut créer un forms.py et urls.p. En utilisant froms.py pour designer comment presenter des formules de parametres qui sont dans models.py. Il faut enregistrer des liens à chaque app à urls.py. 
+Dans un app, models.py et views.py sont fournies. Dans model.py, il faut écrire des paramètres de cet app, et l'enregistrer à feuillederoute/admin.py. Après exécuter, le models.py, django va faire des tables de base de données. S'il y a une classe qui se trouve à feuillederoute/model.py, une table correspondante existe automatiquement. (Vous pouvez changer des informations de tables à l'aide de rédiger la fiche de la table.) Views.py fait partie de recevoir des informations qui vient du front-end, et consulte MySQL pour avoir des informations et lui rendre. Il faut créer un forms.py et urls.p. En utilisant forms.py pour désigner comment présenter des formules de paramètres qui sont dans models.py. Il faut enregistrer des liens à chaque app à urls.py.
 
 Suivi le lien sur Django pour apprendre comment écrire models.py/views.py/forms.py/urls.py
 
@@ -107,7 +106,7 @@ Dans le terminal de PyCharm:
 
     python3 manage.py runserver
 
-Se connecter par le nom de superuser et son mot de pass
+Se connecter par le nom de superuser et son mot de passe
 
 
 
